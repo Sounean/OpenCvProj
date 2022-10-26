@@ -1,3 +1,8 @@
+# 通过Haar定位车牌大致位置，对车牌进行预处理，调用tesseract进行文字识别
+#预处理：1.车牌二值化，2.形态学处理，3.滤波去除噪点，4.缩放
+
+from PIL import Image
+import pytesseract
 import cv2 as cv
 import numpy as np
 
